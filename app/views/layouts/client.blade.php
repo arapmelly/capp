@@ -18,7 +18,7 @@
    
     
    
-    <link rel="stylesheet" type="text/css" href="{{asset('assets/panel/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('assets/panel/css/style.css')}}">
 
     {{HTML::style('assets/bootstrap/css/bootstrap.css')}}
 
