@@ -17,8 +17,8 @@ class UsersController extends Controller
      */
     public function create()
     {
-        //return View::make('auth.signup');
-        return View::make(Config::get('confide::signup_form'));
+        return View::make('auth.signup');
+        
     }
 
     /**
