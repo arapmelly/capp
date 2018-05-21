@@ -14,12 +14,12 @@
 Route::get('/', function()
 {
 
-	return View::make('auth.login');
-	/*if(Confide::user()){
+
+	if(Confide::user()){
 		return Redirect::to('dashboard');
 	} else {
 		return Redirect::to('users/login');
-	}*/
+	}
 	
 });
 
