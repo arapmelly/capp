@@ -83,11 +83,11 @@ class UsersController extends Controller
             return Redirect::intended('/');
         } else {
             if ($repo->isThrottled($input)) {
-                $err_msg = Lang::get('confide::confide.alerts.too_many_attempts');
+                $err_msg = "too many failed attempts";
             } elseif ($repo->existsButNotConfirmed($input)) {
-                $err_msg = Lang::get('confide::confide.alerts.not_confirmed');
+                $err_msg = "Your account has not been confirmed";
             } else {
-                $err_msg = Lang::get('confide::confide.alerts.wrong_credentials');
+                $err_msg = "wrong credentials";
             }
 
             return Redirect::action('UsersController@login')
