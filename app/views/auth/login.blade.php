@@ -13,7 +13,7 @@
                 <p class="text-muted">Sign In to your account</p>
 
                 
-                <form role="form" method="POST" action="{{{ URL::to('/users/login') }}}" accept-charset="UTF-8">
+                <form role="form" method="POST" action="{{{ secure_url('/users/login') }}}" accept-charset="UTF-8">
     <input type="hidden" name="_token" value="{{{ Session::getToken() }}}">
 
     @if (Session::get('error'))
