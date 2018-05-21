@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CVMama - Online CV Maker</title>
+    <title>cvmama - Online CV Maker</title>
 
     <!-- Bootstrap Core CSS -->
     

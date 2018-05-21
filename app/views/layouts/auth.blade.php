@@ -9,15 +9,18 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>CVMama - Online CV Maker</title>
+    <title>cvmama - Online CV Maker</title>
 
     <!-- Bootstrap Core CSS -->
     
     
     
-    {{HTML::style('assets/panel/css/style.css')}}
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('assets/panel/css/style.css')}}">
 
-    {{HTML::style('assets/bootstrap/css/bootstrap.css')}}
+
+    <link rel="stylesheet" type="text/css" href="{{secure_asset('assets/bootstrap/css/bootstrap.css')}}">
+
+
 
     
     <!-- Custom CSS -->
@@ -70,15 +73,18 @@
 
     
 
-    <!-- jQuery Version 1.11.1 -->
-    
-    {{HTML::script('assets/bootstrap/js/jquery.js')}}
+   
+    <script type="text/javascript" src="{{secure_asset('assets/bootstrap/js/jquery.js')}}"></script>
 
     <!-- Bootstrap Core JavaScript -->
     
-    {{HTML::script('assets/bootstrap/js/bootstrap.min.js')}}
+ 
 
-    {{HTML::script('assets/panel/js/main.js')}}
+    <script type="text/javascript" src="{{secure_asset('assets/bootstrap/js/bootstrap.min.js')}}"></script>
+
+
+
+    <script type="text/javascript" src="{{secure_asset('assets/panel/js/main.js')}}"></script>
 
 </body>
 
