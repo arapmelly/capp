@@ -38,7 +38,7 @@ class UsersController extends Controller
                     compact('user'),
                     function ($message) use ($user) {
                         $message
-                            ->to($user->email, $user->username)
+                            ->to($user->email)
                             ->subject(Lang::get('confide::confide.email.account_confirmation.subject'));
                     }
                 );
