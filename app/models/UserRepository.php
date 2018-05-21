@@ -31,7 +31,7 @@ class UserRepository
 
         // Generate a random confirmation code
         $user->confirmation_code     = md5(uniqid(mt_rand(), true));
-        $user->user_type    = array_get($input, 'user_type');
+        $user->user_type    = 'client';
         // Save if valid. Password field will be hashed before save
         $this->save($user);
 
