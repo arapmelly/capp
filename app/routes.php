@@ -13,11 +13,13 @@
 
 Route::get('/', function()
 {
-	if(Confide::user()){
+
+	return View::make(Config::get('confide::login_form'));
+	/*if(Confide::user()){
 		return Redirect::to('dashboard');
 	} else {
 		return Redirect::to('users/login');
-	}
+	}*/
 	
 });
 
