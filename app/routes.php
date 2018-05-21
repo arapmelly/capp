@@ -14,7 +14,7 @@
 Route::get('/', function()
 {
 
-	return View::make(Config::get('confide::login_form'));
+	return View::make('auth.login');
 	/*if(Confide::user()){
 		return Redirect::to('dashboard');
 	} else {
