@@ -15,14 +15,10 @@
     
         
     
-   {{HTML::style('node_modules/flag-icon-css/css/flag-icon.min.css')}}
-
-    {{HTML::style('node_modules/font-awesome/css/font-awesome.min.css')}}
- 
-    {{HTML::style('node_modules/simple-line-icons/css/simple-line-icons.css')}}
+   
     
-    
-    {{HTML::style('assets/panel/css/style.css')}}
+   
+    <link rel="stylesheet" type="text/css" href="{{asset('assets/panel/css/style.css')}}">
 
     {{HTML::style('assets/bootstrap/css/bootstrap.css')}}
 
