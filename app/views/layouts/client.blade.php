@@ -96,17 +96,17 @@
     
 
 
-    <script type="text/javascript" href="{{secure_asset('assets/bootstrap/js/jquery.js')}}"></script>
+    <script type="text/javascript" src="{{secure_asset('assets/bootstrap/js/jquery.js')}}"></script>
 
     <!-- Bootstrap Core JavaScript -->
     
  
 
-    <script type="text/javascript" href="{{secure_asset('assets/bootstrap/js/bootstrap.min.js')}}"></script>
+    <script type="text/javascript" src="{{secure_asset('assets/bootstrap/js/bootstrap.min.js')}}"></script>
 
 
 
-    <script type="text/javascript" href="{{secure_asset('assets/panel/js/main.js')}}"></script>
+    <script type="text/javascript" src="{{secure_asset('assets/panel/js/main.js')}}"></script>
 
 </body>
 
