@@ -31,7 +31,7 @@ class UsersController extends Controller
         $user = $repo->signup(Input::all());
 
         if ($user->id) {
-            if (Config::get('confide::signup_email')) {
+            /*if (Config::get('confide::signup_email')) {
                 Mail::queueOn(
                     Config::get('confide::email_queue'),
                     Config::get('confide::email_account_confirmation'),
@@ -42,7 +42,7 @@ class UsersController extends Controller
                             ->subject(Lang::get('confide::confide.email.account_confirmation.subject'));
                     }
                 );
-            }
+            }*/
 
             return Redirect::to('users/login')
                 ->with('notice', Lang::get('confide::confide.alerts.account_created'));
