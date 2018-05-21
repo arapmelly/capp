@@ -14,14 +14,12 @@
 Route::get('/', function()
 {
 
-$data = User::getData();
 
-echo $data;
-	/*if(Confide::user()){
+	if(Confide::user()){
 		return Redirect::to('dashboard');
 	} else {
 		return Redirect::to('users/login');
-	}*/
+	}
 	
 });
 

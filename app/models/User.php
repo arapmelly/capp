@@ -9,8 +9,5 @@ class User extends Eloquent implements ConfideUserInterface
 
 
 
-    public static function getData(){
-
-    	return 'Jacob Chumo';
-    }
+   
 }
