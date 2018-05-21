@@ -26,7 +26,7 @@ return array(
 	|
 	*/
 
-	'default' => 'sqlite',
+	'default' => 'pgsql',
 
 	/*
 	|--------------------------------------------------------------------------
@@ -65,13 +65,14 @@ return array(
 
 		'pgsql' => array(
 			'driver'   => 'pgsql',
-			'host'     => 'localhost',
-			'database' => 'forge',
-			'username' => 'forge',
-			'password' => '',
+			'host'     => 'ec2-23-21-129-50.compute-1.amazonaws.com',
+			'database' => 'd42rns425mfjrk',
+			'username' => 'jeczdioieltylj',
+			'password' => '29b5cb6768eef8020aeb3c6f1b622dd4d11f60479d5010f9258dc5c246761f8c',
 			'charset'  => 'utf8',
 			'prefix'   => '',
 			'schema'   => 'public',
+			'port'	   => 5432,
 		),
 
 		'sqlsrv' => array(
