@@ -6,8 +6,7 @@
 	"require": {
 		"laravel/framework": "4.2.*",
 		"ext-mcrypt": "^0.0.0",
-		"zizaco/confide": "~4.3@dev",
-		"way/generators": "~2.0"
+		"zizaco/confide": "~4.3@dev"
 	},
 	"autoload": {
 		"classmap": [

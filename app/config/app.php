@@ -122,7 +122,6 @@ return array(
 		'Illuminate\View\ViewServiceProvider',
 		'Illuminate\Workbench\WorkbenchServiceProvider',
 		'Zizaco\Confide\ServiceProvider',
-		'Way\Generators\GeneratorsServiceProvider',
 
 	),
 
