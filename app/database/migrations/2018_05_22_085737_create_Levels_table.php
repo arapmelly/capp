@@ -30,7 +30,7 @@ class CreateLevelsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('Levels');
+		Schema::drop('levels');
 	}
 
 }

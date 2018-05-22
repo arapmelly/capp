@@ -30,7 +30,7 @@ class CreateSectionsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('Sections');
+		Schema::drop('sections');
 	}
 
 }

@@ -53,7 +53,7 @@ class CreateTemplatesTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('Templates');
+		Schema::drop('templates');
 	}
 
 }

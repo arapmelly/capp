@@ -38,7 +38,7 @@ class CreatePaymentsTable extends Migration {
 	 */
 	public function down()
 	{
-		Schema::drop('Payments');
+		Schema::drop('payments');
 	}
 
 }
