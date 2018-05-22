@@ -26,7 +26,7 @@ class Template extends \Eloquent {
 		$last_ref = DB::table('templates')->orderBy('id', 'desc')->pluck('name');
 
 		if($last_ref != null){
-			$new_ref = $last_ref + 1;
+			$new_ref = $last_ref + 1001;
 		} else {
 			$new_ref = 1000;
 		}
