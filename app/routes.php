@@ -58,9 +58,9 @@ Route::get('dashboard', function(){
 
 Route::get('admin', function(){
 
-	//$resumes = Resume::all();
+	$resumes = Resume::all();
 
-	$resumes = array();
+	//$resumes = array();
 
 	return View::make('hello', compact('resumes'));
 });
@@ -68,9 +68,9 @@ Route::get('admin', function(){
 
 Route::get('client', function(){
 
-	//$resumes = DB::table('resumes')->where('user_id', '=', Confide::user()->id)->get();
+	$resumes = DB::table('resumes')->where('user_id', '=', Confide::user()->id)->get();
 
-	$resumes = array();
+	//$resumes = array();
 	return View::make('resumes.index', compact('resumes'));
 });
 
