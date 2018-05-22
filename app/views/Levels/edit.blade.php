@@ -3,7 +3,7 @@
 		
 		<ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="{{URL::to('levels')}}"> Levels</a></li>
-          <li class="breadcrumb-item"><a href="{{URL::to('levels/edit/'.$level->id)}}"> Update Level</a></li>
+          <li class="breadcrumb-item"><a href="{{URL::to('levels/edit/'.$level->id)}}"> Edit Level</a></li>
          
          
          

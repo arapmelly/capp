@@ -3,7 +3,7 @@
 		
 		<ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="{{URL::to('templates')}}"> Templates</a></li>
-          <li class="breadcrumb-item"><a href="{{URL::to('templates/create')}}"> New Template</a></li>
+          <li class="breadcrumb-item"><a href="{{URL::to('templates/create')}}"> Create Template</a></li>
          
          
          

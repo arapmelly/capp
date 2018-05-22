@@ -23,7 +23,7 @@
         		@if(count($payments) < 1)
 
               <div class="alert alert-warning">
-                  There are no payments at the moment
+                  There are no payments at the moment. 
               </div>
 
             @endif

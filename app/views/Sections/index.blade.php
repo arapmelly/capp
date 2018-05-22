@@ -27,7 +27,7 @@
                     <div class="card-body">
                         
                         
-                        <div class=" font-weight-bold text-primary text-uppercase">Create a new section</div>
+                        <div class=" font-weight-bold text-primary text-uppercase">Create a New Section</div>
 
                        
                     
