@@ -31,7 +31,7 @@ class Template extends \Eloquent {
 			$new_ref = 1000;
 		}
 
-
+		return $new_ref;
 	}
 
 }
