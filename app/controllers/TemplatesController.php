@@ -11,7 +11,7 @@ class TemplatesController extends \BaseController {
 	{
 		$templates = Template::all();
 
-		return View::make('templates.index', compact('templates'));
+		return View::make('Templates.index', compact('templates'));
 	}
 
 	/**
@@ -22,7 +22,7 @@ class TemplatesController extends \BaseController {
 	public function create()
 	{
 		$layouts = Icon::layouts();
-		return View::make('templates.create', compact('layouts'));
+		return View::make('Templates.create', compact('layouts'));
 	}
 
 	/**
@@ -95,7 +95,7 @@ class TemplatesController extends \BaseController {
 		$referees = DB::table('contents')->where('section_id', '=', $referee_section_id)->where('resume_id', '=', $resumeid)->get();
 		
 
-		return View::make('templates.show', compact('resume','template', 'sections', 'personal', 'summary', 'works', 'work_section_id', 'education_section_id', 'educations', 'skill_section_id', 'skills', 'referees', 'referee_section_id'));
+		return View::make('Templates.show', compact('resume','template', 'sections', 'personal', 'summary', 'works', 'work_section_id', 'education_section_id', 'educations', 'skill_section_id', 'skills', 'referees', 'referee_section_id'));
 
 		
 
@@ -113,7 +113,7 @@ class TemplatesController extends \BaseController {
 		$template = Template::find($id);
 		$layouts = Icon::layouts();
 
-		return View::make('templates.edit', compact('template', 'layouts'));
+		return View::make('Templates.edit', compact('template', 'layouts'));
 	}
 
 	/**

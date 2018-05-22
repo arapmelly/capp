@@ -11,7 +11,7 @@ class PaymentsController extends \BaseController {
 	{
 		$payments = Payment::all();
 
-		return View::make('payments.index', compact('payments'));
+		return View::make('Payments.index', compact('payments'));
 	}
 
 	/**
@@ -30,7 +30,7 @@ class PaymentsController extends \BaseController {
 
 		
 
-		return View::make('payments.create', compact('template', 'resume'));
+		return View::make('Payments.create', compact('template', 'resume'));
 	}
 
 	/**
@@ -94,7 +94,7 @@ class PaymentsController extends \BaseController {
 	{
 		$payment = Payment::findOrFail($id);
 
-		return View::make('payments.show', compact('payment'));
+		return View::make('Payments.show', compact('payment'));
 	}
 
 	/**
@@ -107,7 +107,7 @@ class PaymentsController extends \BaseController {
 	{
 		$payment = Payment::find($id);
 
-		return View::make('payments.edit', compact('payment'));
+		return View::make('Payments.edit', compact('payment'));
 	}
 
 	/**

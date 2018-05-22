@@ -11,7 +11,7 @@ class ContentsController extends \BaseController {
 	{
 		$contents = Content::all();
 
-		return View::make('contents.index', compact('contents'));
+		return View::make('Contents.index', compact('contents'));
 	}
 
 	/**
@@ -55,7 +55,7 @@ class ContentsController extends \BaseController {
 			return View::make('skill.create', compact('section', 'resume'));
 		}
 
-		return View::make('contents.create');
+		return View::make('Contents.create');
 	}
 
 	/**
@@ -133,7 +133,7 @@ class ContentsController extends \BaseController {
 	{
 		$content = Content::findOrFail($id);
 
-		return View::make('contents.show', compact('content'));
+		return View::make('Contents.show', compact('content'));
 	}
 
 	/**

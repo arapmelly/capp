@@ -11,7 +11,7 @@ class SectionsController extends \BaseController {
 	{
 		$sections = Section::all();
 
-		return View::make('sections.index', compact('sections'));
+		return View::make('Sections.index', compact('sections'));
 	}
 
 	/**
@@ -21,7 +21,7 @@ class SectionsController extends \BaseController {
 	 */
 	public function create()
 	{
-		return View::make('sections.create');
+		return View::make('Sections.create');
 	}
 
 	/**
@@ -57,7 +57,7 @@ class SectionsController extends \BaseController {
 	{
 		$section = Section::findOrFail($id);
 
-		return View::make('sections.show', compact('section'));
+		return View::make('Sections.show', compact('section'));
 	}
 
 	/**
@@ -70,7 +70,7 @@ class SectionsController extends \BaseController {
 	{
 		$section = Section::find($id);
 
-		return View::make('sections.edit', compact('section'));
+		return View::make('Sections.edit', compact('section'));
 	}
 
 	/**

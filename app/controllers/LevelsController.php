@@ -11,7 +11,7 @@ class LevelsController extends \BaseController {
 	{
 		$levels = Level::all();
 
-		return View::make('levels.index', compact('levels'));
+		return View::make('Levels.index', compact('levels'));
 	}
 
 	/**
@@ -22,7 +22,7 @@ class LevelsController extends \BaseController {
 	public function create()
 	{
 		
-		return View::make('levels.create');
+		return View::make('Levels.create');
 	}
 
 	/**
@@ -58,7 +58,7 @@ class LevelsController extends \BaseController {
 	{
 		$level = Level::findOrFail($id);
 
-		return View::make('levels.show', compact('level'));
+		return View::make('Levels.show', compact('level'));
 	}
 
 	/**
@@ -72,7 +72,7 @@ class LevelsController extends \BaseController {
 		$level = Level::find($id);
 
 
-		return View::make('levels.edit', compact('level'));
+		return View::make('Levels.edit', compact('level'));
 	}
 
 	/**
