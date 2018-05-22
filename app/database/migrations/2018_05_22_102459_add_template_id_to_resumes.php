@@ -14,8 +14,7 @@ class AddTemplateIdToResumes extends Migration {
 	{
 		Schema::table('resumes', function($table) {
 
-        	$table->integer('template_id')->unsigned();
-			$table->foreign('template_id')->references('id')->on('templates');
+        	$table->integer('template_id')->nullable();
     	});
 	}
 
