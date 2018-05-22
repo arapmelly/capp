@@ -12,7 +12,7 @@ class CreateTemplatesTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('Templates', function(Blueprint $table)
+		Schema::create('templates', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->string('name');

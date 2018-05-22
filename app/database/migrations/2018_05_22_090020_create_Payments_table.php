@@ -12,7 +12,7 @@ class CreatePaymentsTable extends Migration {
 	 */
 	public function up()
 	{
-		Schema::create('Payments', function(Blueprint $table)
+		Schema::create('payments', function(Blueprint $table)
 		{
 			$table->increments('id');
 			$table->integer('resume_id')->unsigned();
