@@ -37,7 +37,7 @@
             <div class="form-group row ">
               <div class="col-xs-12 ">
                 
-                <input type="text" name="name" class="form-control" placeholder="Template Name">
+                <input type="text" name="name" class="form-control" pvalue="{{Template::getName()}}">
               </div>
             </div>
 
