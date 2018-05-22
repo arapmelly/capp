@@ -20,6 +20,7 @@ class CreateResumesTable extends Migration {
 			$table->foreign('user_id')->references('id')->on('users');
 			$table->integer('level_id')->unsigned();
 			$table->foreign('level_id')->references('id')->on('levels');
+			$table->integer('template_id')->nullable();
 			$table->string('cv_ref')->nullable();
 			$table->timestamps();
 		});
