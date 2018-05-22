@@ -78,5 +78,59 @@ Route::get('client', function(){
 
 
 
+//Level Routes
+Route::resource('levels', 'LevelsController');
+Route::get('levels/edit/{id}', 'LevelsController@edit');
+Route::post('levels/update/{id}', 'LevelsController@update');
+Route::get('levels/delete/{id}', 'LevelsController@destroy');
+
+
+Route::resource('sections', 'SectionsController');
+Route::get('sections/edit/{id}', 'SectionsController@edit');
+Route::post('sections/update/{id}', 'SectionsController@update');
+Route::get('sections/delete/{id}', 'SectionsController@destroy');
+
+Route::resource('templates', 'TemplatesController');
+Route::get('templates/edit/{id}', 'TemplatesController@edit');
+Route::post('templates/update/{id}', 'TemplatesController@update');
+Route::get('templates/delete/{id}', 'TemplatesController@destroy');
+Route::get('templates/show/{id}', 'TemplatesController@show');
+Route::get('templates/thumb/{id}', 'TemplatesController@thumb');
+
+Route::resource('resumes', 'ResumesController');
+Route::get('resumes/edit/{id}', 'ResumesController@edit');
+Route::post('resumes/update/{id}', 'ResumesController@update');
+Route::get('resumes/delete/{id}', 'ResumesController@destroy');
+Route::get('resumes/show/{id}', 'ResumesController@show');
+Route::get('resumes/init/{id}', 'ResumesController@init');
+Route::get('resumes/preview/{id}', 'ResumesController@preview');
+Route::get('resumes/view/{id}', 'ResumesController@view');
+Route::get('resumes/payment/{id}', 'ResumesController@checkpayment');
+Route::get('resumes/download/{id}', 'ResumesController@download');
+Route::get('resumes/down/{id}', 'ResumesController@down');
+Route::get('resumestemplates/{id}', 'ResumesController@templates');
+Route::get('resumes/settemplates/{id}', 'ResumesController@settemplate');
+Route::get('resumes/settemp/{id}', 'ResumesController@settemp');
+
+
+
+Route::resource('contents', 'ContentsController');
+Route::get('contents/edit/{id}', 'ContentsController@edit');
+Route::post('contents/update/{id}', 'ContentsController@update');
+Route::get('contents/delete/{id}', 'ContentsController@destroy');
+Route::get('contents/show/{id}', 'ContentsController@show');
+Route::get('contents/view/{id}', 'ContentsController@view');
+Route::get('contents/create/{id}', 'ContentsController@create');
+Route::get('contents/nextsection/{id}', 'ContentsController@nextsection');
+
+
+Route::resource('payments', 'PaymentsController');
+Route::get('payments/confirm/{id}', 'PaymentsController@confirm');
+Route::get('payments/create/{id}', 'PaymentsController@create');
+
+
+
+
+
 
 }); //end of route group
